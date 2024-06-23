@@ -9,6 +9,12 @@ spec:
     ports:
     - containerPort: 80
   
+  containers:
+  - name: hello-pod 
+    image: python 
+    ports: 
+    - containerPort: 90
+  
   - name: almalinux
     image: almalinux:8
     command: ['sleep', '300' ]
