@@ -7,8 +7,8 @@ metadata:
     practiceing: devops 
 spec: 
   - containers:
-    name: nginx-container 
-    image: nginx 
+      name: nginx-container 
+      image: nginx 
     ports:
       containerPort: 80 
 
