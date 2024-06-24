@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: annotations
+  labels:
+    name: rajesh 
+    practiceing: "devops aws"
+  annotations:
+    devops.practes: "9 hr per day is need" 
+spec: 
+  containers:
+  - name: nginx-container 
+    image: nginx 
+    ports:
+    - containerPort: 80 
