@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: configPod
+spec: 
+  containers:
+  - name: config-pod 
+    image: nginx
+    ports:
+    - containerPort: 80
+    env:
+    - name: course
+      valueFrom:   #where to take so wh have to use value  from
+        configMapKeyRef:  
+          name: configMap-demo # name of config map 
+          key: course #   inconfig map  from where it has to take 
+
+    - name: trainer 
+      valueFrom:
+        configMapKeyRef:
+          name: configMap-demo
+          key: trainer
+
