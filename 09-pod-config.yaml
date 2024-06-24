@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: config-Pod
+  name: Config-Pod
 spec: 
   containers:
   - name: config-pod 
