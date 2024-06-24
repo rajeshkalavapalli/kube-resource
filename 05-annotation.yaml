@@ -4,7 +4,7 @@ metadata:
   name: annotations
   labels:
     name: rajesh 
-    practiceing: "devops aws"
+    practiceing: "devops-aws"
   annotations:
     devops.practes: "9 hr per day is need" 
 spec: 
