@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: labels-demo
+  labels:
+    name: rajesh 
+    practiceing: devops 
+spec: 
+  - containers:
+    name: nginx-container 
+    image: nginx 
+    ports:
+      containerPort: 80 
+
