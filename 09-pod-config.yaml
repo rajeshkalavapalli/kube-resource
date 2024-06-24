@@ -10,14 +10,13 @@ spec:
     - containerPort: 80
     env:
     - name: course
-      valueFrom:   #where to take so wh have to use value  from
-        configMapKeyRef:  
-          name: configmap-demo-pod # name of config map 
-          key: course #   inconfig map  from where it has to take 
-
-    - name: trainer 
       valueFrom:
         configMapKeyRef:
-          name: configmap-demo-pod
-          key: trainer
+          name: configmap-demo-pod  # Name of the ConfigMap
+          key: course  # Key in the ConfigMap
+    - name: trainer
+      valueFrom:
+        configMapKeyRef:
+          name: configmap-demo-pod  # Name of the ConfigMap
+          key: trainer  # Key in the ConfigMap
 
